@@ -1,0 +1,131 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4829,        123]
+NotebookOptionsPosition[      3778,         95]
+NotebookOutlinePosition[      4344,        117]
+CellTagsIndexPosition[      4258,        112]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"StringJoin", "[", 
+    RowBox[{
+     RowBox[{"ParentDirectory", "[", 
+      RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ",", 
+     "\"\</MMSAdapter\>\""}], "]"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<MMS`\>\"", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<MMSAdapter`\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"project", "=", "\"\<PROJECT-ID\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ref", "=", "\"\<master\>\""}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"id", "=", "\"\<ELEMENT-ID\>\""}], ";"}]}], "Input",
+ CellChangeTimes->{{3.732393241644816*^9, 3.7323932997309303`*^9}, {
+  3.73530879181036*^9, 3.735308792357296*^9}, {3.735309080010007*^9, 
+  3.7353090869330873`*^9}, {3.736865278650938*^9, 3.736865306988491*^9}, {
+  3.736865858561694*^9, 3.736865888928934*^9}, {3.7374048388761263`*^9, 
+  3.737404866968896*^9}, {3.7374049250898733`*^9, 3.7374049295461187`*^9}, {
+  3.737405270631918*^9, 3.737405270829432*^9}, {3.7374053459707603`*^9, 
+  3.737405350890915*^9}, {3.7374055485462627`*^9, 3.7374055514774427`*^9}, {
+  3.737406168894668*^9, 3.73740617217454*^9}, {3.7378363475663347`*^9, 
+  3.737836379526833*^9}, {3.737837017953238*^9, 3.737837020273129*^9}, {
+  3.742646786567713*^9, 3.7426467877026176`*^9}, {3.7934802897366247`*^9, 
+  3.793480294358672*^9}},ExpressionUUID->"461c9374-276f-4510-a795-\
+a88c6cec9f63"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "MMSAdapter`Login"}]], "Input",
+ CellChangeTimes->{{3.793480322053526*^9, 3.793480325754703*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"63845ac1-69f0-463e-9c71-5b2e698f70d6"],
+
+Cell[BoxData["\<\"Login[server_String] - Logs in to specific server\"\>"], \
+"Print", "PrintUsage",
+ CellChangeTimes->{3.7934803267983418`*^9},
+ CellTags->
+  "Info103793455126-1039755",ExpressionUUID->"0d009970-cede-4083-9409-\
+5093676fbd74"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"MMSAdapter`Login", "[", "\"\<mms.org\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.73530879795855*^9, 3.7353088320902643`*^9}, 
+   3.7368646021565933`*^9, {3.7378363894862127`*^9, 3.737836394372963*^9}, 
+   3.7378370225826397`*^9, {3.7426468634126797`*^9, 3.742646864228503*^9}, {
+   3.793480297197722*^9, 
+   3.7934802981465597`*^9}},ExpressionUUID->"201a36f1-a6fc-4f48-bb71-\
+9974a5dff77a"],
+
+Cell[BoxData[
+ RowBox[{"MMSAdapter`GetPresentationElement", "[", 
+  RowBox[{
+  "\"\<mms.org\>\"", ",", "project", ",", "ref", ",", 
+   "\"\<view_instances_bin_PROJECT-ID\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.737893264677121*^9, 3.7378932694859743`*^9}, 
+   3.738353845955374*^9, {3.7934803012339573`*^9, 
+   3.793480311724884*^9}},ExpressionUUID->"d0020723-e9ec-4144-a770-\
+1c173eadc736"],
+
+Cell[BoxData[
+ RowBox[{"MMSAdapter`Logout", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.73686545765897*^9, 3.736865471656848*^9}, {
+   3.736865540619532*^9, 3.736865542234321*^9}, {3.7368656485654707`*^9, 
+   3.7368656502383947`*^9}, 3.736865785617898*^9, {3.737836568657948*^9, 
+   3.737836570676454*^9}},
+ CellLabel->"In[52]:=",ExpressionUUID->"0035d116-5acc-408e-9c9e-83e08eac2c54"]
+},
+WindowSize->{889, 1249},
+WindowMargins->{{Automatic, 274}, {Automatic, 0}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info103793455126-1039755"->{
+  Cell[2314, 60, 242, 5, 46, "Print",ExpressionUUID->"0d009970-cede-4083-9409-5093676fbd74",
+   CellTags->"Info103793455126-1039755"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info103793455126-1039755", 4099, 106}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1524, 31, 136, "Input",ExpressionUUID->"461c9374-276f-4510-a795-a88c6cec9f63"],
+Cell[CellGroupData[{
+Cell[2107, 55, 204, 3, 30, "Input",ExpressionUUID->"63845ac1-69f0-463e-9c71-5b2e698f70d6"],
+Cell[2314, 60, 242, 5, 46, "Print",ExpressionUUID->"0d009970-cede-4083-9409-5093676fbd74",
+ CellTags->"Info103793455126-1039755"]
+}, Open  ]],
+Cell[2571, 68, 415, 7, 30, "Input",ExpressionUUID->"201a36f1-a6fc-4f48-bb71-9974a5dff77a"],
+Cell[2989, 77, 397, 8, 30, "Input",ExpressionUUID->"d0020723-e9ec-4144-a770-1c173eadc736"],
+Cell[3389, 87, 385, 6, 30, "Input",ExpressionUUID->"0035d116-5acc-408e-9c9e-83e08eac2c54"]
+}
+]
+*)
+

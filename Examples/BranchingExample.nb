@@ -1,0 +1,121 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3849,        113]
+NotebookOptionsPosition[      2798,         85]
+NotebookOutlinePosition[      3363,        107]
+CellTagsIndexPosition[      3277,        102]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"StringJoin", "[", 
+    RowBox[{
+     RowBox[{"ParentDirectory", "[", 
+      RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ",", 
+     "\"\</MMSAdapter\>\""}], "]"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<MMS`\>\"", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<MMSAdapter`\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"project", "=", "\"\<PROJECT_ID\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ref", "=", "\"\<master\>\""}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"id", "=", "\"\<ELEMENT_ID\>\""}], ";"}]}], "Input",
+ CellChangeTimes->{{3.7428430833905563`*^9, 3.742843101471826*^9}, {
+  3.793480181319922*^9, 
+  3.793480189875703*^9}},ExpressionUUID->"92bbf4b3-3f24-42ef-9d8a-\
+f11310681ff7"],
+
+Cell[BoxData[
+ RowBox[{"MMSAdapter`Login", "[", "\"\<mms.org\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.74284314807395*^9, 3.742843162146699*^9}, {
+  3.793480192997385*^9, 
+  3.793480194122849*^9}},ExpressionUUID->"ba38bf22-7cf2-427a-b038-\
+0d10fae074e6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "MMSAdapter`CreateBranch"}]], "Input",
+ CellChangeTimes->{{3.742843674135494*^9, 3.742843677025927*^9}},
+ CellLabel->
+  "In[327]:=",ExpressionUUID->"63130b4b-df9f-4c0c-8cbe-63941c1a9567"],
+
+Cell[BoxData["\<\"Create a new branch from a parent branch\"\>"], "Print", "PrintUsage",
+ CellChangeTimes->{3.742843678065454*^9},
+ CellTags->
+  "Info3273742818477-3615603",ExpressionUUID->"5380f3fc-34f3-49c2-ba81-\
+c41aa740be4e"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"respo", "=", 
+   RowBox[{"MMSAdapter`CreateBranch", "[", 
+    RowBox[{
+    "\"\<mms.org\>\"", ",", "project", ",", "ref", ",", "\"\<newBranch\>\""}],
+     "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.742843478260151*^9, 3.742843552373219*^9}, {
+  3.793480172884008*^9, 
+  3.793480175712956*^9}},ExpressionUUID->"9f43e1fa-0754-4d3c-b35a-\
+cfe2c541ca4c"],
+
+Cell[BoxData[
+ RowBox[{"Print", "[", "respo", "]"}]], "Input",
+ CellChangeTimes->{{3.742843556873499*^9, 3.742843559541144*^9}},
+ CellLabel->
+  "In[326]:=",ExpressionUUID->"6004168a-948e-41a8-9004-131054cf1699"]
+},
+WindowSize->{808, 845},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3273742818477-3615603"->{
+  Cell[1945, 60, 230, 4, 46, "Print",ExpressionUUID->"5380f3fc-34f3-49c2-ba81-c41aa740be4e",
+   CellTags->"Info3273742818477-3615603"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3273742818477-3615603", 3117, 96}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 884, 23, 136, "Input",ExpressionUUID->"92bbf4b3-3f24-42ef-9d8a-f11310681ff7"],
+Cell[1445, 45, 257, 5, 30, "Input",ExpressionUUID->"ba38bf22-7cf2-427a-b038-0d10fae074e6"],
+Cell[CellGroupData[{
+Cell[1727, 54, 215, 4, 30, "Input",ExpressionUUID->"63130b4b-df9f-4c0c-8cbe-63941c1a9567"],
+Cell[1945, 60, 230, 4, 46, "Print",ExpressionUUID->"5380f3fc-34f3-49c2-ba81-c41aa740be4e",
+ CellTags->"Info3273742818477-3615603"]
+}, Open  ]],
+Cell[2190, 67, 390, 10, 30, "Input",ExpressionUUID->"9f43e1fa-0754-4d3c-b35a-cfe2c541ca4c"],
+Cell[2583, 79, 211, 4, 30, "Input",ExpressionUUID->"6004168a-948e-41a8-9004-131054cf1699"]
+}
+]
+*)
+
