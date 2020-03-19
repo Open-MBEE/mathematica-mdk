@@ -10,26 +10,17 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      6337,        153]
-NotebookOptionsPosition[      5286,        125]
-NotebookOutlinePosition[      5848,        147]
-CellTagsIndexPosition[      5763,        142]
+NotebookDataLength[      7108,        170]
+NotebookOptionsPosition[      5587,        133]
+NotebookOutlinePosition[      6361,        159]
+CellTagsIndexPosition[      6233,        153]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"SetDirectory", "[", 
-   RowBox[{"StringJoin", "[", 
-    RowBox[{
-     RowBox[{"ParentDirectory", "[", 
-      RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ",", 
-     "\"\</MMSAdapter\>\""}], "]"}], "]"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"Needs", "[", "\"\<MMS`\>\"", "]"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"Get", "[", "\"\<MMSAdapter`\>\"", "]"}], ";"}], "\n", 
+  RowBox[{"Needs", "[", "\"\<MDK`\>\"", "]"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"server", "=", "\"\<mms.org\>\""}], ";"}], "\n", 
  RowBox[{
@@ -67,12 +58,27 @@ Cell[BoxData[{
    3.735302271270282*^9, 3.735302274681117*^9}, {3.7353035974554157`*^9, 
    3.735303610184394*^9}, {3.73685966385119*^9, 3.736859664040207*^9}, 
    3.736859727120008*^9, {3.737403792665998*^9, 3.737403831229093*^9}, {
-   3.793480218523979*^9, 3.793480226120378*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"2e4d1ba6-ecc3-4383-a29c-589ee278f87e"],
+   3.793480218523979*^9, 3.793480226120378*^9}, {3.793569464648283*^9, 
+   3.793569469976712*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"2e4d1ba6-ecc3-4383-a29c-589ee278f87e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "MDK`UploadFile"}]], "Input",
+ CellChangeTimes->{{3.793569477294457*^9, 3.7935694831220922`*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"4fd8131c-2081-4456-8d66-7ccceb3b5d5e"],
+
+Cell[BoxData["\<\"Uploads a file to the artifacts endpoint\"\>"], "Print", "PrintUsage",
+ CellChangeTimes->{3.793569483606884*^9},
+ CellTags->
+  "Info133793544283-4959366",ExpressionUUID->"cb781bb5-f08c-4c06-a4a6-\
+34252dbbaeb3"]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{"artifact", "=", 
-  RowBox[{"MMSAdapter`UploadFile", "[", 
+  RowBox[{"MDK`UploadFile", "[", 
    RowBox[{"server", ",", "project", ",", "ref", ",", "id", ",", "test"}], 
    "]"}]}]], "Input",
  CellChangeTimes->{{3.734878130032628*^9, 3.7348781456532297`*^9}, {
@@ -80,9 +86,9 @@ Cell[BoxData[
    3.7348786481516037`*^9}, 3.734878689595479*^9, {3.735300676062635*^9, 
    3.735300678433136*^9}, {3.7353036125439672`*^9, 3.73530361306336*^9}, {
    3.7368598499412117`*^9, 3.736859851395402*^9}, {3.737836576138935*^9, 
-   3.7378365777099133`*^9}},
- CellLabel->
-  "In[108]:=",ExpressionUUID->"d7d8f7e0-ceea-42b3-b36e-defb2fea1a74"],
+   3.7378365777099133`*^9}, {3.7935694745389223`*^9, 
+   3.7935694749516487`*^9}},ExpressionUUID->"d7d8f7e0-ceea-42b3-b36e-\
+defb2fea1a74"],
 
 Cell[BoxData[
  RowBox[{
@@ -101,26 +107,28 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"?", "MMSAdapter`PublishTableToPresentationElement"}]], "Input",
- CellChangeTimes->{{3.7934802610713043`*^9, 3.7934802722495747`*^9}},
- CellLabel->"In[9]:=",ExpressionUUID->"3dcbfd7d-27c3-4e54-a413-505af9c703f6"],
+ RowBox[{"?", "MDK`PublishTableToPresentationElement"}]], "Input",
+ CellChangeTimes->{{3.7934802610713043`*^9, 3.7934802722495747`*^9}, {
+  3.7935694862082653`*^9, 3.793569486471397*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"3dcbfd7d-27c3-4e54-a413-505af9c703f6"],
 
 Cell[BoxData["\<\"Publishes a table to a presentation element\"\>"], "Print", "PrintUsage",
- CellChangeTimes->{3.793480273371469*^9},
+ CellChangeTimes->{3.7935694871841917`*^9},
  CellTags->
-  "Info93793455073-1039755",ExpressionUUID->"2f427b1e-472e-48eb-b7c0-\
-2bcfa7cbc1d4"]
+  "Info143793544287-4959366",ExpressionUUID->"3d9a2170-0bf8-4fd7-8901-\
+f80346ecf84e"]
 }, Open  ]],
 
 Cell[BoxData[
- RowBox[{"MMSAdapter`PublishImageToPresentationElement", "[", 
+ RowBox[{"MDK`PublishImageToPresentationElement", "[", 
   RowBox[{
   "server", ",", "project", ",", "ref", ",", 
    "\"\<TABLE-PRESENTATION-ELEMENT-ID\>\"", ",", "\"\<secondTry\>\"", ",", 
    "test2"}], "]"}]], "Input",
  CellChangeTimes->{{3.7368617615892344`*^9, 3.7368618014973583`*^9}, {
   3.737836579537341*^9, 3.7378365810385227`*^9}, {3.793480244923085*^9, 
-  3.793480252626027*^9}},ExpressionUUID->"e1f9d288-62f1-46ff-98c5-\
+  3.793480252626027*^9}, {3.793569490139143*^9, 
+  3.7935694904189873`*^9}},ExpressionUUID->"e1f9d288-62f1-46ff-98c5-\
 4ec237bad4db"]
 },
 WindowSize->{1680, 956},
@@ -134,27 +142,36 @@ StyleDefinitions->"Default.nb"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "Info93793455073-1039755"->{
-  Cell[4569, 107, 231, 4, 46, "Print",ExpressionUUID->"2f427b1e-472e-48eb-b7c0-2bcfa7cbc1d4",
-   CellTags->"Info93793455073-1039755"]}
+ "Info133793544283-4959366"->{
+  Cell[3140, 71, 229, 4, 46, "Print",ExpressionUUID->"cb781bb5-f08c-4c06-a4a6-34252dbbaeb3",
+   CellTags->"Info133793544283-4959366"]},
+ "Info143793544287-4959366"->{
+  Cell[4823, 114, 234, 4, 46, "Print",ExpressionUUID->"3d9a2170-0bf8-4fd7-8901-f80346ecf84e",
+   CellTags->"Info143793544287-4959366"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Info93793455073-1039755", 5604, 136}
+ {"Info133793544283-4959366", 5906, 144},
+ {"Info143793544287-4959366", 6073, 147}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 2635, 50, 178, "Input",ExpressionUUID->"2e4d1ba6-ecc3-4383-a29c-589ee278f87e"],
-Cell[3196, 72, 655, 12, 30, "Input",ExpressionUUID->"d7d8f7e0-ceea-42b3-b36e-defb2fea1a74"],
-Cell[3854, 86, 452, 12, 30, "Input",ExpressionUUID->"36b3734f-2127-4575-88b2-7c10ef56e900"],
+Cell[558, 20, 2350, 42, 136, "Input",ExpressionUUID->"2e4d1ba6-ecc3-4383-a29c-589ee278f87e"],
 Cell[CellGroupData[{
-Cell[4331, 102, 235, 3, 30, "Input",ExpressionUUID->"3dcbfd7d-27c3-4e54-a413-505af9c703f6"],
-Cell[4569, 107, 231, 4, 46, "Print",ExpressionUUID->"2f427b1e-472e-48eb-b7c0-2bcfa7cbc1d4",
- CellTags->"Info93793455073-1039755"]
+Cell[2933, 66, 204, 3, 30, "Input",ExpressionUUID->"4fd8131c-2081-4456-8d66-7ccceb3b5d5e"],
+Cell[3140, 71, 229, 4, 46, "Print",ExpressionUUID->"cb781bb5-f08c-4c06-a4a6-34252dbbaeb3",
+ CellTags->"Info133793544283-4959366"]
 }, Open  ]],
-Cell[4815, 114, 467, 9, 30, "Input",ExpressionUUID->"e1f9d288-62f1-46ff-98c5-4ec237bad4db"]
+Cell[3384, 78, 676, 12, 30, "Input",ExpressionUUID->"d7d8f7e0-ceea-42b3-b36e-defb2fea1a74"],
+Cell[4063, 92, 452, 12, 30, "Input",ExpressionUUID->"36b3734f-2127-4575-88b2-7c10ef56e900"],
+Cell[CellGroupData[{
+Cell[4540, 108, 280, 4, 30, "Input",ExpressionUUID->"3dcbfd7d-27c3-4e54-a413-505af9c703f6"],
+Cell[4823, 114, 234, 4, 46, "Print",ExpressionUUID->"3d9a2170-0bf8-4fd7-8901-f80346ecf84e",
+ CellTags->"Info143793544287-4959366"]
+}, Open  ]],
+Cell[5072, 121, 511, 10, 30, "Input",ExpressionUUID->"e1f9d288-62f1-46ff-98c5-4ec237bad4db"]
 }
 ]
 *)

@@ -10,27 +10,17 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7889,        190]
-NotebookOptionsPosition[      7079,        169]
-NotebookOutlinePosition[      7432,        185]
-CellTagsIndexPosition[      7389,        182]
+NotebookDataLength[      7649,        183]
+NotebookOptionsPosition[      6839,        162]
+NotebookOutlinePosition[      7192,        178]
+CellTagsIndexPosition[      7149,        175]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"SetDirectory", "[", 
-   RowBox[{"StringJoin", "[", 
-    RowBox[{
-     RowBox[{"ParentDirectory", "[", 
-      RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ",", 
-     "\"\</MMSAdapter\>\""}], "]"}], "]"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"Needs", "[", "\"\<MMS`\>\"", "]"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"Get", "[", "\"\<MMSAdapter`\>\"", "]"}], 
-  ";"}], "\[IndentingNewLine]", 
+  RowBox[{"Needs", "[", "\"\<MDK`\>\"", "]"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"server", "=", "\"\<mms.org\>\""}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
@@ -59,8 +49,8 @@ Cell[BoxData[{
    3.737836199204365*^9, 3.737836231036827*^9}, {3.7378389375435963`*^9, 
    3.7378389377248497`*^9}, {3.7378389934048*^9, 3.737839005293038*^9}, {
    3.737839506884974*^9, 3.7378395219391947`*^9}, {3.793480338342491*^9, 
-   3.7934803512796392`*^9}},ExpressionUUID->"a2efced5-1e86-4b3b-9ccc-\
-4585fd55467c"],
+   3.7934803512796392`*^9}, {3.7935695309854813`*^9, 3.793569537644108*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"a2efced5-1e86-4b3b-9ccc-4585fd55467c"],
 
 Cell[CellGroupData[{
 
@@ -151,21 +141,24 @@ Cell[BoxData[
 }, Open  ]],
 
 Cell[BoxData[
- RowBox[{"MMSAdapter`GetPresentationElement", "[", 
+ RowBox[{"MDK`GetPresentationElement", "[", 
   RowBox[{"server", ",", "project", ",", "ref", ",", "tableID"}], 
   "]"}]], "Input",
- CellChangeTimes->{{3.737838826802659*^9, 3.737838835307962*^9}},
- CellLabel->"In[10]:=",ExpressionUUID->"92c87803-e67f-4aac-8311-22b7603fbf6a"],
+ CellChangeTimes->{{3.737838826802659*^9, 3.737838835307962*^9}, {
+  3.793569541767807*^9, 
+  3.793569544499086*^9}},ExpressionUUID->"92c87803-e67f-4aac-8311-\
+22b7603fbf6a"],
 
 Cell[BoxData[
- RowBox[{"MMSAdapter`PublishTableToPresentationElement", "[", 
+ RowBox[{"MDK`PublishTableToPresentationElement", "[", 
   RowBox[{
   "server", ",", "project", ",", "ref", ",", "tableID", ",", "someGrid"}], 
   "]"}]], "Input",
  CellChangeTimes->{{3.7325532011201067`*^9, 3.7325532477277317`*^9}, {
   3.737836407735931*^9, 3.737836411753776*^9}, {3.737839079026516*^9, 
-  3.737839080512084*^9}},
- CellLabel->"In[64]:=",ExpressionUUID->"76f6a59d-133d-4e91-9ed6-a71259f9641b"]
+  3.737839080512084*^9}, {3.7935695463311453`*^9, 
+  3.793569546626113*^9}},ExpressionUUID->"76f6a59d-133d-4e91-9ed6-\
+a71259f9641b"]
 },
 WindowSize->{1680, 956},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
@@ -184,14 +177,14 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 2238, 42, 157, "Input",ExpressionUUID->"a2efced5-1e86-4b3b-9ccc-4585fd55467c"],
+Cell[558, 20, 1953, 32, 115, "Input",ExpressionUUID->"a2efced5-1e86-4b3b-9ccc-4585fd55467c"],
 Cell[CellGroupData[{
-Cell[2821, 66, 911, 19, 52, "Input",ExpressionUUID->"c7fcd5d2-192d-425c-876d-7295389a730b"],
-Cell[3735, 87, 1565, 35, 56, "Output",ExpressionUUID->"a9c420f0-3c4b-4216-b4cd-0dab2d39a4cb"],
-Cell[5303, 124, 1029, 25, 219, "Output",ExpressionUUID->"1328ff76-06f7-476d-a8e1-4be7d043621a"]
+Cell[2536, 56, 911, 19, 52, "Input",ExpressionUUID->"c7fcd5d2-192d-425c-876d-7295389a730b"],
+Cell[3450, 77, 1565, 35, 56, "Output",ExpressionUUID->"a9c420f0-3c4b-4216-b4cd-0dab2d39a4cb"],
+Cell[5018, 114, 1029, 25, 219, "Output",ExpressionUUID->"1328ff76-06f7-476d-a8e1-4be7d043621a"]
 }, Open  ]],
-Cell[6347, 152, 296, 5, 30, "Input",ExpressionUUID->"92c87803-e67f-4aac-8311-22b7603fbf6a"],
-Cell[6646, 159, 429, 8, 30, "Input",ExpressionUUID->"76f6a59d-133d-4e91-9ed6-a71259f9641b"]
+Cell[6062, 142, 319, 7, 30, "Input",ExpressionUUID->"92c87803-e67f-4aac-8311-22b7603fbf6a"],
+Cell[6384, 151, 451, 9, 30, "Input",ExpressionUUID->"76f6a59d-133d-4e91-9ed6-a71259f9641b"]
 }
 ]
 *)
