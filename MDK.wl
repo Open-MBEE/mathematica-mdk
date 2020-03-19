@@ -3,12 +3,12 @@
 Needs["MMS`"]
 
 
-BeginPackage["MMSAdapter`"];
+BeginPackage["MDK`"];
 MMSUtils::usage="Functions to read/write to MMS";
 MMS`SetInteractive[False];
 
 
-Login::usage="Login[server_String] - Logs in to specific server";
+Login::usage="Login[server_String] - Logs in to a specific server";
 
 
 Begin["`Private`"];
