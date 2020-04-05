@@ -1,6 +1,6 @@
 # Mathematica Model Development Kit (MDK)
 
-[![Download](https://api.bintray.com/packages/openmbee/maven/mathematica-mdk/images/download.svg)](https://bintray.com/openmbee/maven/mathematica-mdk/_latestVersion)
+[![Download](https://api.bintray.com/packages/openmbee/maven/mathematica-mdk/images/download.svg)](https://bintray.com/openmbee/maven/mathematica-mdk/_latestVersion) [![Jira](https://img.shields.io/badge/issues-jira-blue)](https://openmbee.atlassian.net/browse/MATHMDK)
 
 Mathematica MDK is an application for [Wolfram Mathematica](https://www.wolfram.com/mathematica/) that enables interactions with the [MMS](https://github.com/Open-MBEE/mms-alfresco) such as retrieving analysis inputs and publishing analysis outputs, e.g. computed values, plots, tables.
 
