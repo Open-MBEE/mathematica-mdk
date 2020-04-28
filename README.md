@@ -38,7 +38,10 @@ Mathematica MDK is an application for [Wolfram Mathematica](https://www.wolfram.
         {"BasicAuth", "interactive", "SetBasePath", "SetBasicAuth", \
         "SetInteractive", "SetTicketAuth", "TicketAuth"}
 5. Check out the [example notebooks](examples).
-  
+
+# Contributing
+
+To learn how you can get involved in a variety of ways, please see [Contibuting to OpenMBEE](https://www.openmbee.org/contribute).
 
 # Local Development
 
